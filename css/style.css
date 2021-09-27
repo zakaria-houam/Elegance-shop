@@ -1,0 +1,402 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Mukta', sans-serif;
+    
+}
+:root{
+    --first-color:#000000;
+    --second-color: #082032;
+    --third-color:#334756;
+    --fourth-color:#F0A500;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: var(--second-color);
+    z-index: 1;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background: var(--second-color);
+    width: 100%;
+}
+.shadow{
+    box-shadow: 1px 1px 10px 1px var(--fourth-color);
+}
+.menu{
+    color: white;
+    display: none;
+}
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 3rem;
+    padding-top: 1rem;
+}
+.nav-bar .nav ul li{
+    display: inline-block;
+    margin-right: 3rem;
+}
+.nav-bar .nav ul li a{
+    font-size: 1.2rem;
+    color: white;
+}
+.nav-bar .nav ul li a:hover{
+    color: var(--fourth-color);
+}
+.logo a{
+    color: var(--fourth-color);
+    font-size: 2rem;
+    font-family: 'Birthstone', cursive;
+    border-bottom: 1px solid var(--fourth-color);
+    cursor: pointer;
+    user-select: none;
+}
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home-left{
+    color: #ffffff;
+    flex-basis: 33%;
+    margin-left: 3rem;
+}
+.home-left .elegance{
+    font-size: 5rem;
+}
+.home-left .attia{
+    color: var(--fourth-color);
+    font-size: 1rem;
+    font-weight: 100;
+    margin-bottom: .7rem;
+}
+.home-left .bar{
+    width: 10rem;
+    height: 2px;
+    background: var(--fourth-color);
+}
+.home-left span{
+    height: 2px;
+    width: 200px;
+    background-color: var(--fourth-color);
+}
+.home-left i{
+    color: white;
+    font-size: 3rem;
+    margin-top: 5rem;
+    margin-right: 3rem;
+}
+.home-left i:hover{
+    color: var(--fourth-color);
+}
+.home-center{
+    margin-right: 5rem;
+}
+.home-right{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 33%;
+    margin-right: 2rem;
+   
+}
+.home-right h3{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: var(--first-color);
+}
+.home-right h1{
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.home-right h6{
+    color: var(--third-color);
+    font-weight: bolder;
+    font-size: 1rem;
+}
+.home-right a{
+    color: var(--fourth-color);
+    margin-top: 2rem;
+}
+.service{
+    background: var(--third-color);
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10rem;
+}
+.service-left{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 3rem;
+    margin-left: 3rem;
+}
+.serv{
+    height: 15rem;
+    width: 18rem;
+    background: var(--second-color);
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px 1px var(--first-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    
+}
+.serv h1{
+    color: white;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: bolder;
+}
+.serv h3{
+    color: white;
+    font-weight: 50;
+    margin-bottom: .2rem;
+    
+}
+.serv img{
+    width: 50px;
+}
+.service-right{
+    margin-left: 4rem;
+    padding-right: 3rem;
+}
+.ser2{
+    margin-top: 4.5rem;
+}
+.ser4{
+    margin-top: 4.5rem;
+}
+.service-right h2{
+    color: var(--fourth-color);
+    margin-bottom: 1rem;
+}
+.service-right h1{
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.service-right p{
+    color: var(--second-color);
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 1.2rem;
+}
+.project{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9rem;
+    margin-top: 7rem;
+    padding-right: 5rem;
+}
+.project-description{
+    flex-basis: 35%;
+}
+.project-description h2{
+    color: var(--fourth-color);
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+.project-description h1{
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.project-description p{
+    color: var(--third-color);
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+.project-description a{
+    color: var(--fourth-color);
+}
+.project-description a:hover{
+    border-bottom: 1px solid var(--fourth-color);
+}
+.project-img img{
+    width: 500px;
+    border-radius: 20px;
+    transform: rotate(10deg);
+    margin-left: 5rem;
+}
+.project-img{
+    box-shadow: 1px 1px 10px 1px var(--third-color);
+}
+.awards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .7rem;
+    margin-top: 6rem;
+    margin-bottom: 1rem;
+}
+.award{
+    height: 15rem;
+    width: 15rem;
+    border-radius: 40px;
+    background: var(--third-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.award h1{
+    color: var(--fourth-color);
+    font-size: 3rem;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+}
+.award h3{
+    color: white;
+    font-weight: 100;
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 1px 1px 10px 1px var(--fourth-color);
+}
+footer .copy-right{
+    color: white;
+    
+}
+.copy-right h2{
+    font-weight: 100;
+}
+footer .links{
+    display: flex;
+    margin-top: 2rem;
+    gap: 2rem;
+}
+footer .link{
+    background: var(--third-color);
+    padding: .5rem;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+}
+footer .links i{
+    color: var(--fourth-color);
+    font-size: 2rem;
+}
+footer .info h2{
+    color: white;
+    margin-top: 1rem;
+}
+@media only screen and (max-width:600px) {
+   
+    .home{
+        flex-direction: column;
+    }
+ 
+    .nav-bar .nav .list{
+        position: absolute;
+        top: -999%;
+        left: -33%;
+        background: var(--fourth-color);
+        width: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        transition: 1s ease-in-out;
+    }
+    .nav-bar .nav .show{
+        top: 99%;
+    }
+    .nav-bar .nav ul li{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .nav-bar{
+        padding-left: 1rem;
+    }
+    .menu{
+        display: block;
+        color: white;
+        font-size: 2.5rem;
+        margin-right: 3rem;
+    }
+    .logo a{
+        font-size: 1.5rem;
+        margin-right: 9rem;
+        border-bottom: none;
+    }
+    .home{
+        margin-top: 5rem;
+    }
+    .home-left .elegance{
+        font-size: 4rem;
+        margin-bottom: 2rem;
+    }
+    .home-right{
+        margin-left: 2rem;
+    }
+    .service{
+        flex-direction: column;
+        margin-top: .5rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .service-left{
+        grid-template-columns: repeat(1,1fr);
+        margin-left: 0rem;
+        margin-right: 2rem;
+    }
+    .service-right{
+        margin: 1rem;
+    }
+    .service-right p{
+        margin-bottom: 1rem;
+    }
+    .project{
+        flex-direction: column;
+        margin-left: 1rem;
+        gap: 2rem;
+        padding-right: 0rem;
+        margin-right: 3rem;
+        
+    }
+    .project-img img{
+        width: 250px;
+    }
+    .project-description{
+        flex-basis: 100%;
+        margin-right: 0;
+    }
+    .awards{
+        flex-direction: column;
+    }
+   footer{
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+   }
+   footer .copy-right{
+       margin-right: 1rem;
+       font-size: .8rem;
+   }
+   footer .logo{
+       margin-left: 6rem;
+       margin-bottom: 1rem;
+   }
+}
